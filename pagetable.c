@@ -21,3 +21,18 @@ for(i=1;i<=n;i++)
                                     printf("%d\t\t",a[i]);
                                     avail=0;
                                     for(k=0;k<no;k++)
+if(frame[k]==a[i])
+                                                avail=1;
+                                    if (avail==0)
+                                    {
+                                                frame[j]=a[i];
+                                                j=(j+1)%no;
+                                                count++;
+                                                for(k=0;k<no;k++)
+                                                printf("%d\t",frame[k]);
+}
+                                    printf("\n");
+}
+                        printf("Page Fault Is %d",count);
+                        return 0;
+}
