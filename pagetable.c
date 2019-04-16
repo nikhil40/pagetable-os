@@ -12,3 +12,12 @@ scanf("%d",&n);
             printf("\n ENTER THE PAGE SIZE :");
             for(i=1;i<=n;i++)
             scanf("%d",&page);         
+for(i=0;i<no;i++)
+            frame[i]= -1;
+                        j=0;
+                        printf("\tref string\t page frames\n");
+for(i=1;i<=n;i++)
+                        {
+                                    printf("%d\t\t",a[i]);
+                                    avail=0;
+                                    for(k=0;k<no;k++)
